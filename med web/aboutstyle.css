@@ -1,10 +1,11 @@
+@import url('https://googleapis.com');
+
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+    
 }
-
-
 
 .medical-logo {
     display: flex;
@@ -80,12 +81,14 @@
     position: relative;
     z-index: 10;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    background-color: #f0f0f183;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: 27px;
+    font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
 }
 
 .nav-links a {
@@ -93,7 +96,7 @@
     color: #29415c;
     font-size: 18px;
     transition: 0.3s;
-    font: 600;
+    font: 700;
 }
 
 .nav-links a:hover {
@@ -122,134 +125,113 @@
     background: #066bc4;
 }
 
-.hero {
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
 
-    
-    min-height: 506px;
-    background-image: url("background (1).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+.about-section{
+    margin: 10px 1%;
+    padding:15px 25px  ;
 }
 
-.hero-content {
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    transform: translateY(-50%);
-    color: #123b72;
+
+.our-about-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px; 
 }
 
-.welcome {
-    color: #1b98eb;
-    font-size: 20px;
-    font-weight: bold;
+
+.about-heading-text{
+    margin-bottom: 50px;
+}
+.small-title{
+    color: #0066cc;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
     margin-bottom: 10px;
 }
-
-.hero-content h1 {
-    font-size: 40px;
-    line-height: 1.15;
-    margin-bottom: 14px;
-}
-
-.description {
-    color: #526b83;
-    font-size: 19px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* Hero Buttons */
-.hero-content button {
-    background: #087ee8;
-    color: white;
-    border: none;
-    border-radius: 13px;
-    padding: 13px 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-content button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(8, 126, 232, 0.25);
-}
-
-.hero-content .learn-btn {
-    background: white;
-    color: #087ee8;
-    border: 2px solid #087ee8;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-content .learn-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(8, 126, 232, 0.20);
-}
-
-.medical-stats {
-    display: flex;
-    align-items: center;
-    gap: 45px;
-    margin-top: 35px;
-}
-
-
-.stat {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.stat-icon {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #087ee8;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-.stat h3 {
-    margin: 0;
-
-    color: #123b72;
-
-    font-size: 15px;
+.main-heading{
+    font-size: 27px;
     font-weight: 700;
+     margin-bottom: 20px;
+    line-height: 1.3;
+     color: #11335d;
+}
+.description {
+    color: #556070;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-.stat p {
-    margin: 2px 0 0;
 
-    color: #6d8296;
-
-    font-size: 8px;
+.text-side {
+    flex: 1;
 }
-.features{
-    width: 100%;
+
+.features-list{
+    list-style: none;
+    margin-bottom: 35px;
+}
+.features-list li{
     display: flex;
-    gap: 35px;
-
-}
-.feature-card {
-    text-align: center;
-    padding: 10px 25px;
-}
-.feature-icon {
-    width: 52px;
-    height: 52px;
-    background: #e9f5ff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto 15px;
-    color: #087ee8;
-       font-size: 23px;
+     color: #0c2340;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.check-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #0066cc;
+    border-radius: 50%;
+    font-size: 16px;
+     font-weight: bold;
+    margin-right: 15px;
+}
+.btn-learn{
+    padding: 15px 25px ;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #0066cc;
+     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
+    border-color:#d6b8b8 ;
+    border: 2px solid;
+}
+.btn-learn:hover {
+    background-color: #133e70;
+}
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.image-wrapper {
+    width: 100%;
+    max-width: 550px; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
